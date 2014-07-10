@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 module Cinch
 
   # == Description
@@ -298,8 +300,6 @@ module Cinch
             end
           end
           
-          # insert prefix unless it already exists
-          pattern.insert(1, prefix) unless pattern[1..prefix.size] == prefix
 
           if rule.options[:ignore_case]
             regex = Regexp.new(pattern, Regexp::IGNORECASE)
